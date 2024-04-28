@@ -1,0 +1,25 @@
+{
+  "name": "hangem",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd client && npm run test && cd ../server && npm run test",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run start",
+    "build": "cd client && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yaelBrown/hangem.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yaelBrown/hangem/issues"
+  },
+  "homepage": "https://github.com/yaelBrown/hangem#readme",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
