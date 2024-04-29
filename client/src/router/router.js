@@ -5,7 +5,6 @@ import Login from "../components/Login"
 import DashboardLayout from "../components/layouts/DashboardLayout"
 import DashboardHome from "../components/Dashboard/DashboardHome"
 
-
 const ProtectedRoute = ({ 
   user, 
   redirectPath = "/login",
@@ -31,10 +30,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <ProtectedRoute 
-      user={true}
-      component={<DashboardLayout component={<DashboardHome/>} />} 
-    />
+    element: <ProtectedRoute user={true} component={<DashboardLayout component={<DashboardHome/>} />} />
   }
 ])
 

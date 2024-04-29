@@ -5,15 +5,18 @@ const app = express();
 const cors = require("cors")
 const http = require('http');
 const server = http.createServer(app);
+const { Server } = require("socket.io");
 const port = process.env.PORT || 3001
 
+const sequelize = require("./db/connection")
+
 app.get('/', (req, res) => {
-  res.send('<h1>Hello world</h1>');
+  res.send('<h1>Hangem Server</h1>');
 });
 
 const io = new Server(server, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3002",
     methods: ["GET", "POST"]
   }
 })
@@ -22,6 +25,8 @@ io.on("connection", (socket) => {
   console.log(`User Connected: ${socket.id}`)
 })
 
-server.listen(port, () => {
-  console.log(`listening on port: ${port}`);
-});
+sequelize.sync({ force: true }).then(() => {
+  server.listen(port, () => {
+    console.log(`listening on port: ${port}`);
+  });
+})
