@@ -2,7 +2,6 @@ import { createBrowserRouter, Navigate } from "react-router-dom"
 import HomeLayout from "../components/layouts/HomeLayout"
 import Home from "../components/Home"
 import Login from "../components/Login"
-import DashboardLayout from "../components/layouts/DashboardLayout"
 import DashboardHome from "../components/Dashboard/DashboardHome"
 
 const ProtectedRoute = ({ 
@@ -16,9 +15,6 @@ const ProtectedRoute = ({
     return component;
 };
 
-// const user = {name: "cookies", age: 69}
-// const user2 = undefined
-
 const router = createBrowserRouter([
   {
     path: "/",
@@ -30,7 +26,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/dashboard",
-    element: <ProtectedRoute user={true} component={<DashboardLayout component={<DashboardHome/>} />} />
+    element: <ProtectedRoute user={true} component={<DashboardHome/>} />
   }
 ])
 

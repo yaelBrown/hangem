@@ -2,7 +2,7 @@ import { DataTypes } from 'sequelize'
 
 const sequelize = require("./db/connection")
 
-const User = sequelize.define('User', {
+const User = sequelize.define('users', {
   id: {
     type: DataTypes.UUIDV4,
     allowNull: false,
