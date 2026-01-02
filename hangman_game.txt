@@ -1,0 +1,10 @@
+rope
+head
+neck 
+back
+left leg
+right leg
+left arm
+right arm
+left foot
+right foot

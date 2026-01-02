@@ -1,32 +1,22 @@
-require('dotenv').config()
+// Require the framework and instantiate it
+const fastify = require('fastify')({ logger: true })
+const path = require('path')
 
-const express = require('express');
-const app = express();
-const cors = require("cors")
-const http = require('http');
-const server = http.createServer(app);
-const { Server } = require("socket.io");
-const port = process.env.PORT || 3001
+fastify.register(require('@fastify/static'), {
+    root: path.join(__dirname, 'public'),
+    prefix: '/',
+    index: 'index.html',
+})
 
-const sequelize = require("./db/connection")
+// Declare a route
+fastify.get('/helloworld', function handler (request, reply) {
+  reply.send({ hello: 'world' })
+})
 
-app.get('/', (req, res) => {
-  res.send('<h1>Hangem Server</h1>');
-});
-
-const io = new Server(server, {
-  cors: {
-    origin: "http://localhost:3002",
-    methods: ["GET", "POST"]
+// Run the server!
+fastify.listen({ port: 8080 }, (err) => {
+  if (err) {
+    fastify.log.error(err)
+    process.exit(1)
   }
-})
-
-io.on("connection", (socket) => {
-  console.log(`User Connected: ${socket.id}`)
-})
-
-sequelize.sync({ force: true }).then(() => {
-  server.listen(port, () => {
-    console.log(`listening on port: ${port}`);
-  });
 })
