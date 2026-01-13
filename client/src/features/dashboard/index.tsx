@@ -1,4 +1,6 @@
-import { Button } from '@/components/ui/button'
+// Used for dashboard home
+
+import { useState } from 'react'
 import {
   Card,
   CardContent,
@@ -6,19 +8,38 @@ import {
   CardHeader,
   CardTitle,
 } from '@/components/ui/card'
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
-import { ConfigDrawer } from '@/components/config-drawer'
+import { Tabs, TabsContent } from '@/components/ui/tabs'
 import { Header } from '@/components/layout/header'
 import { Main } from '@/components/layout/main'
-import { TopNav } from '@/components/layout/top-nav'
 import { ProfileDropdown } from '@/components/profile-dropdown'
-import { Search } from '@/components/search'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { Analytics } from './components/analytics'
-import { Overview } from './components/overview'
 import { RecentSales } from './components/recent-sales'
+import SampleNewsData from './sample_data/sample_news.json'
+import { News } from './components/news'
+import { IconUsersIcon } from '@/assets/icons/icon-usersIcon'
+import { IconCreditCard } from '@/assets/icons/icon-creditCard'
+import { IconSquareWave } from '@/assets/icons/icon-squareWave'
+import { IconDollarSign } from '@/assets/icons/icon-dollarSign'
 
 export function Dashboard() {
+  // State for holding information to pass to the dashboard
+  const initialState = {
+    // dashboardNews: [],
+    dashboardNews: SampleNewsData, // Used for dev purposes
+    dashboardTotalPlayers: 0,
+    dashboardGamesActive: 0,
+    dashboardGamesActivePlayers: 0,
+    userSol: 1.4,
+    userPrevGames: 0,
+    userPrevGamesWon: 0,
+    cryptoSolUsd: 143.66962931373857
+  }
+
+  const [state, setState] = useState(initialState)
+
+  console.log(state.dashboardNews)
+
   return (
     <>
       {/* ===== Top Heading ===== */}
@@ -43,117 +64,78 @@ export function Dashboard() {
           </div>
           <TabsContent value='overview' className='space-y-4'>
             <div className='grid gap-4 sm:grid-cols-2 lg:grid-cols-4'>
+
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Total Revenue
+                    Total SOL
                   </CardTitle>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    className='h-4 w-4 text-muted-foreground'
-                  >
-                    <path d='M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6' />
-                  </svg>
+                  <IconDollarSign/>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>$45,231.89</div>
+                  <div className='text-2xl font-bold'>
+                    {(state.userSol).toFixed(3)}
+                  </div>
                   <p className='text-xs text-muted-foreground'>
-                    +20.1% from last month
+                    ${(state.userSol * state.cryptoSolUsd).toFixed(2)} USD
                   </p>
                 </CardContent>
               </Card>
+
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Subscriptions
+                    Games Played
                   </CardTitle>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    className='h-4 w-4 text-muted-foreground'
-                  >
-                    <path d='M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2' />
-                    <circle cx='9' cy='7' r='4' />
-                    <path d='M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75' />
-                  </svg>
+                  <IconUsersIcon/>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>+2350</div>
+                  <div className='text-2xl font-bold'>{state.userPrevGames}</div>
                   <p className='text-xs text-muted-foreground'>
-                    +180.1% from last month
+                    {state.userPrevGamesWon} game(s) won
                   </p>
                 </CardContent>
               </Card>
+
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
-                  <CardTitle className='text-sm font-medium'>Sales</CardTitle>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    className='h-4 w-4 text-muted-foreground'
-                  >
-                    <rect width='20' height='14' x='2' y='5' rx='2' />
-                    <path d='M2 10h20' />
-                  </svg>
+                  <CardTitle className='text-sm font-medium'>Games Active</CardTitle>
+                  <IconCreditCard/>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>+12,234</div>
+                  <div className='text-2xl font-bold'>{state.dashboardGamesActive}</div>
                   <p className='text-xs text-muted-foreground'>
-                    +19% from last month
+                    Current game(s) active on the network.
                   </p>
                 </CardContent>
               </Card>
+
               <Card>
                 <CardHeader className='flex flex-row items-center justify-between space-y-0 pb-2'>
                   <CardTitle className='text-sm font-medium'>
-                    Active Now
+                    Active Players
                   </CardTitle>
-                  <svg
-                    xmlns='http://www.w3.org/2000/svg'
-                    viewBox='0 0 24 24'
-                    fill='none'
-                    stroke='currentColor'
-                    strokeLinecap='round'
-                    strokeLinejoin='round'
-                    strokeWidth='2'
-                    className='h-4 w-4 text-muted-foreground'
-                  >
-                    <path d='M22 12h-4l-3 9L9 3l-3 9H2' />
-                  </svg>
+                  <IconSquareWave/>
                 </CardHeader>
                 <CardContent>
-                  <div className='text-2xl font-bold'>+573</div>
+                  <div className='text-2xl font-bold'>{state.dashboardGamesActivePlayers}</div>
                   <p className='text-xs text-muted-foreground'>
-                    +201 since last hour
+                    Current active player(s) on the network
                   </p>
                 </CardContent>
               </Card>
             </div>
+
             <div className='grid grid-cols-1 gap-4 lg:grid-cols-7'>
               <Card className='col-span-1 lg:col-span-4'>
                 <CardHeader>
-                  <CardTitle>Overview</CardTitle>
+                  <CardTitle>News</CardTitle>
                 </CardHeader>
                 <CardContent className='ps-2'>
-                  <Overview />
+                  <News items={state.dashboardNews} />
                 </CardContent>
               </Card>
+
               <Card className='col-span-1 lg:col-span-3'>
                 <CardHeader>
                   <CardTitle>Recent Sales</CardTitle>
@@ -166,10 +148,14 @@ export function Dashboard() {
                 </CardContent>
               </Card>
             </div>
+
           </TabsContent>
+
+          {/* Replace with previous games component */}
           <TabsContent value='analytics' className='space-y-4'>
             <Analytics />
           </TabsContent>
+
         </Tabs>
       </Main>
     </>
