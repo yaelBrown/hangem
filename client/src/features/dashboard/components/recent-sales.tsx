@@ -18,6 +18,7 @@ export function RecentSales() {
           <div className='font-medium'>+$1,999.00</div>
         </div>
       </div>
+
       <div className='flex items-center gap-4'>
         <Avatar className='flex h-9 w-9 items-center justify-center space-y-0 border'>
           <AvatarImage src='/avatars/02.png' alt='Avatar' />
@@ -33,6 +34,7 @@ export function RecentSales() {
           <div className='font-medium'>+$39.00</div>
         </div>
       </div>
+
       <div className='flex items-center gap-4'>
         <Avatar className='h-9 w-9'>
           <AvatarImage src='/avatars/03.png' alt='Avatar' />
@@ -78,6 +80,7 @@ export function RecentSales() {
           <div className='font-medium'>+$39.00</div>
         </div>
       </div>
+      
     </div>
   )
 }

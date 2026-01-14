@@ -1,5 +1,4 @@
 // Used for dashboard home
-
 import { useState } from 'react'
 import {
   Card,
@@ -15,12 +14,13 @@ import { ProfileDropdown } from '@/components/profile-dropdown'
 import { ThemeSwitch } from '@/components/theme-switch'
 import { Analytics } from './components/analytics'
 import { RecentSales } from './components/recent-sales'
-import SampleNewsData from './sample_data/sample_news.json'
 import { News } from './components/news'
 import { IconUsersIcon } from '@/assets/icons/icon-usersIcon'
 import { IconCreditCard } from '@/assets/icons/icon-creditCard'
 import { IconSquareWave } from '@/assets/icons/icon-squareWave'
 import { IconDollarSign } from '@/assets/icons/icon-dollarSign'
+import SampleNewsData from './sample_data/sample_news.json'
+import regionEnum from '../game-search/util/region-enum.json'
 
 export function Dashboard() {
   // State for holding information to pass to the dashboard
@@ -37,8 +37,6 @@ export function Dashboard() {
   }
 
   const [state, setState] = useState(initialState)
-
-  console.log(state.dashboardNews)
 
   return (
     <>

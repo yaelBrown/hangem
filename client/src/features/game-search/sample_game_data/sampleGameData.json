@@ -1,0 +1,418 @@
+[
+  {
+    "roomId": "A1F9KQ",
+    "roomName": "Casual Lobby 1",
+    "players": 3,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "B7Z2M8",
+    "roomName": "Fast Match",
+    "players": 7,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": false
+  },
+  {
+    "roomId": "C9X4L2",
+    "roomName": "Ranked Grind",
+    "players": 12,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": true
+  },
+  {
+    "roomId": "D8QW91",
+    "roomName": "Night Owls",
+    "players": 5,
+    "maxPlayers": 19,
+    "region": "EU-Central",
+    "password": false
+  },
+  {
+    "roomId": "E3R7T9",
+    "roomName": "Chill Zone",
+    "players": 2,
+    "maxPlayers": 19,
+    "region": "SA-East",
+    "password": true
+  },
+  {
+    "roomId": "FJ4K82",
+    "roomName": "No Mercy",
+    "players": 14,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "G6MZP1",
+    "roomName": "Practice Room",
+    "players": 6,
+    "maxPlayers": 19,
+    "region": "Asia-East",
+    "password": false
+  },
+  {
+    "roomId": "H2L8XA",
+    "roomName": "Tryhard Only",
+    "players": 19,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "J9WQ4B",
+    "roomName": "Beginner Friendly",
+    "players": 4,
+    "maxPlayers": 19,
+    "region": "NA-Central",
+    "password": false
+  },
+  {
+    "roomId": "K7D1F3",
+    "roomName": "Late Night Ranked",
+    "players": 11,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": true
+  },
+  {
+    "roomId": "LZP82M",
+    "roomName": "Speed Runs",
+    "players": 9,
+    "maxPlayers": 19,
+    "region": "EU-North",
+    "password": false
+  },
+  {
+    "roomId": "M4XQ7R",
+    "roomName": "Chaos Mode",
+    "players": 15,
+    "maxPlayers": 19,
+    "region": "SA-South",
+    "password": false
+  },
+  {
+    "roomId": "N9A6TQ",
+    "roomName": "Warmup Room",
+    "players": 1,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "P3W7C8",
+    "roomName": "Friends Only",
+    "players": 8,
+    "maxPlayers": 19,
+    "region": "Asia-South",
+    "password": true
+  },
+  {
+    "roomId": "Q8K2JZ",
+    "roomName": "Full Send",
+    "players": 18,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "R4D9M1",
+    "roomName": "Casual Lobby 2",
+    "players": 5,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": false
+  },
+  {
+    "roomId": "S7F3QK",
+    "roomName": "Testing Builds",
+    "players": 10,
+    "maxPlayers": 19,
+    "region": "NA-Central",
+    "password": false
+  },
+  {
+    "roomId": "T1Z8XP",
+    "roomName": "Old School",
+    "players": 6,
+    "maxPlayers": 19,
+    "region": "EU-East",
+    "password": true
+  },
+  {
+    "roomId": "U6C2L9",
+    "roomName": "Hardcore Mode",
+    "players": 16,
+    "maxPlayers": 19,
+    "region": "Asia-East",
+    "password": false
+  },
+  {
+    "roomId": "VQ7R4M",
+    "roomName": "Learning Room",
+    "players": 3,
+    "maxPlayers": 19,
+    "region": "SA-East",
+    "password": false
+  },
+  {
+    "roomId": "W9P2KX",
+    "roomName": "No HUD",
+    "players": 13,
+    "maxPlayers": 19,
+    "region": "EU-Central",
+    "password": false
+  },
+  {
+    "roomId": "X8D4Z1",
+    "roomName": "Competitive Queue",
+    "players": 17,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": true
+  },
+  {
+    "roomId": "Y3L6QM",
+    "roomName": "Sandbox",
+    "players": 4,
+    "maxPlayers": 19,
+    "region": "Asia-South",
+    "password": false
+  },
+  {
+    "roomId": "Z1F9W7",
+    "roomName": "Open Match",
+    "players": 7,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": false
+  },
+  {
+    "roomId": "A8R3TQ",
+    "roomName": "Speed Lobby",
+    "players": 12,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "B4M7XP",
+    "roomName": "Aim Practice",
+    "players": 2,
+    "maxPlayers": 19,
+    "region": "NA-Central",
+    "password": false
+  },
+  {
+    "roomId": "C6ZKQ9",
+    "roomName": "Veterans Only",
+    "players": 15,
+    "maxPlayers": 19,
+    "region": "EU-North",
+    "password": true
+  },
+  {
+    "roomId": "D1P8FQ",
+    "roomName": "Late Joiners",
+    "players": 9,
+    "maxPlayers": 19,
+    "region": "SA-South",
+    "password": false
+  },
+  {
+    "roomId": "E7L4X9",
+    "roomName": "Quick Play",
+    "players": 11,
+    "maxPlayers": 19,
+    "region": "Asia-East",
+    "password": false
+  },
+  {
+    "roomId": "F2Q8MR",
+    "roomName": "Daily Match",
+    "players": 6,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "G9W1XP",
+    "roomName": "Experimental",
+    "players": 5,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "H6F3ZQ",
+    "roomName": "Casual Lobby 3",
+    "players": 8,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": false
+  },
+  {
+    "roomId": "J4P9M2",
+    "roomName": "Balanced Teams",
+    "players": 14,
+    "maxPlayers": 19,
+    "region": "EU-Central",
+    "password": false
+  },
+  {
+    "roomId": "KX7R8Q",
+    "roomName": "Open Scrims",
+    "players": 10,
+    "maxPlayers": 19,
+    "region": "Asia-South",
+    "password": false
+  },
+  {
+    "roomId": "L1ZQF6",
+    "roomName": "Weekend Rush",
+    "players": 16,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "M8C4PZ",
+    "roomName": "Quick Warmup",
+    "players": 3,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "NQ2R7X",
+    "roomName": "Ranked Trial",
+    "players": 12,
+    "maxPlayers": 19,
+    "region": "SA-East",
+    "password": false
+  },
+  {
+    "roomId": "P9F6WZ",
+    "roomName": "Custom Rules",
+    "players": 7,
+    "maxPlayers": 19,
+    "region": "Asia-East",
+    "password": true
+  },
+  {
+    "roomId": "Q4X8M1",
+    "roomName": "Community Match",
+    "players": 11,
+    "maxPlayers": 19,
+    "region": "NA-Central",
+    "password": false
+  },
+  {
+    "roomId": "RZ6P9Q",
+    "roomName": "Test Server",
+    "players": 4,
+    "maxPlayers": 19,
+    "region": "EU-North",
+    "password": false
+  },
+  {
+    "roomId": "S1KX8F",
+    "roomName": "Full Lobby Soon",
+    "players": 19,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "T9Q4ZC",
+    "roomName": "New Players",
+    "players": 2,
+    "maxPlayers": 19,
+    "region": "SA-South",
+    "password": false
+  },
+  {
+    "roomId": "U7P1XM",
+    "roomName": "All Welcome",
+    "players": 9,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "V4ZQ6K",
+    "roomName": "Endgame Lobby",
+    "players": 13,
+    "maxPlayers": 19,
+    "region": "Asia-East",
+    "password": false
+  },
+  {
+    "roomId": "W1M8FQ",
+    "roomName": "Last Slot Open",
+    "players": 18,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": false
+  },
+  {
+    "roomId": "XQ7P93",
+    "roomName": "Mixed Skill",
+    "players": 6,
+    "maxPlayers": 19,
+    "region": "EU-Central",
+    "password": false
+  },
+  {
+    "roomId": "FULL001",
+    "roomName": "Full Game 1",
+    "players": 19,
+    "maxPlayers": 19,
+    "region": "NA-East",
+    "password": false
+  },
+  {
+    "roomId": "FULL002",
+    "roomName": "Full Game 2",
+    "players": 19,
+    "maxPlayers": 19,
+    "region": "EU-West",
+    "password": false
+  },
+  {
+    "roomId": "LOCK001",
+    "roomName": "Password Protected",
+    "players": 10,
+    "maxPlayers": 19,
+    "region": "NA-West",
+    "password": true
+  },
+  {
+    "roomId": "LOCK002",
+    "roomName": "Private Lobby",
+    "players": 15,
+    "maxPlayers": 19,
+    "region": "EU-Central",
+    "password": true
+  },
+  {
+    "roomId": "FULLOCK1",
+    "roomName": "Full & Locked",
+    "players": 19,
+    "maxPlayers": 19,
+    "region": "Asia-East",
+    "password": true
+  },
+  {
+    "roomId": "FULLOCK2",
+    "roomName": "Private Full",
+    "players": 19,
+    "maxPlayers": 19,
+    "region": "SA-East",
+    "password": true
+  }
+]
